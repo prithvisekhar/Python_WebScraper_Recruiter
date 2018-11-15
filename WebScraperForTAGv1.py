@@ -32,7 +32,7 @@ def jobsiteIndeed(skill, location, resultLinks):
     #print(soup.prettify())
     #Runnning the function to extract links
     extract_links_from_result(soup, resultLinks)
-    return resultLinks
+    return 1
 
 
 def extract_links_from_result(soup, resultLinks):
