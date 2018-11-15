@@ -38,10 +38,10 @@ def jobsiteIndeed(skill, location, resultLinks):
 def extract_links_from_result(soup, resultLinks):
 
     Links = []
-    for div in soup.find_all(name='div', attrs={"class": "app_name"}):
+    #for div in soup.find_all(name='div', attrs={"class": "app_name"}):
 
-        for link in soup.findAll('a', attrs={'href': re.compile("/r/")}):
-            Links.append(link.get('href'))
+    for link in soup.findAll('a', attrs={'href': re.compile("/r/")}):
+        Links.append(link.get('href'))
     #print(Links)
     MaxLinks = 10
     resultLinks = Links[:MaxLinks] # to extract MaxLinks only
